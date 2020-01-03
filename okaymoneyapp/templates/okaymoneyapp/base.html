@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}OkayMoney{% endblock title %}</title>
+
+    <link rel="stylesheet" href="{% static 'okaymoneyapp/css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'okaymoneyapp/css/buttons.css' %}">
+
+    {% block head %}{% endblock head %}
+</head>
+<body>
+    {% block body %}
+    {% endblock body %}
+</body>
+</html>
