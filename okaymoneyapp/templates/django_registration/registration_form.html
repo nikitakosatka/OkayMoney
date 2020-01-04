@@ -20,9 +20,13 @@
         <div>
             {{ form.username.label_tag }}
             {{ form.username }}
-            {{ form.password.label_tag }}
-            {{ form.password }}
-            <input type="submit" value="Войти">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+            {{ form.password1.label_tag }}
+            {{ form.password1 }}
+            {{ form.password2.label_tag }}
+            {{ form.password2 }}
+            <input type="submit" value="Зарегистрироваться">
         </div>
     </form>
 {% endblock content %}

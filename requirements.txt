@@ -1,0 +1,2 @@
+django
+git+https://github.com/ubernostrum/django-registration@b76f3b280437794397e092bbc3deef88f683da1b
