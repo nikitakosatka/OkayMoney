@@ -2,13 +2,13 @@
 
 <header>
     <div>
-        <img src="{% static 'okaymoneyapp/images/icon.png' %}">
+        <img src="{% static "okaymoneyapp/images/icon.png" %}">
         <h1>OkayMoney</h1>
     </div>
     <div>
         <merged-buttons>
-            <button>Войти</button>
-            <button>Зарегистрироваться</button>
+            <a href="{% url "login" %}" class="button">Войти</a>
+            <a class="button">Зарегистрироваться</a>
         </merged-buttons>
     </div>
 </header>

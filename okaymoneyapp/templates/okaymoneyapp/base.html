@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 {% load static %}
+{% load css %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}OkayMoney{% endblock title %}</title>
 
-    <link rel="stylesheet" href="{% static 'okaymoneyapp/css/global.css' %}">
-    <link rel="stylesheet" href="{% static 'okaymoneyapp/css/buttons.css' %}">
+    {% css "global" %}
 
-    {% block head %}{% endblock head %}
+    {% block head %}
+    {% endblock head %}
 </head>
 <body>
     {% block body %}

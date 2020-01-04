@@ -1,10 +1,11 @@
-{% extends 'okaymoneyapp/base.html' %}
+{% extends 'okaymoneyapp/base_header.html' %}
 {% load static %}
 
 {% block head %}
+    {{ block.super }}
     <link rel="stylesheet" href="{% static 'okaymoneyapp/css/index.css' %}">
 {% endblock head %}
 
-{% block body %}
-    {% include 'okaymoneyapp/header.html' %}
-{% endblock body %}
+{% block content %}
+    {# TODO #}
+{% endblock content %}

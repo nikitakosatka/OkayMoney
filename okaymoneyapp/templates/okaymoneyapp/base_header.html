@@ -1,0 +1,16 @@
+{% extends "okaymoneyapp/base.html" %}
+
+{% load static %}
+{% load css %}
+
+{% block head %}
+    {% css "header" %}
+{% endblock head %}
+
+{% block body %}
+    {% include "okaymoneyapp/header.html" %}
+    <content>
+        {% block content %}
+        {% endblock content %}
+    </content>
+{% endblock body %}

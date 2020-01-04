@@ -1,0 +1,23 @@
+{% extends "okaymoneyapp/base_header.html" %}
+{% load css %}
+
+{% block head %}
+    {{ block.super }}
+    {% css "login" %}
+{% endblock head %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {% if form.errors %}
+            <error>Неверный логин или пароль.</error>
+        {% endif %}
+        <div>
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            <input type="submit" value="Войти">
+        </div>
+    </form>
+{% endblock content %}

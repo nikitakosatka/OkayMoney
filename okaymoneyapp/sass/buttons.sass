@@ -1,34 +1,40 @@
+$button-alike: "button", "a.button", "input[type=submit]"
 $button-corner-radius: 8px
 
-button
+#{$button-alike}
+    display: block
     color: white
     border: white 1px solid
     border-radius: $button-corner-radius
     background-color: #2165ff
     font-size: 12pt
+    text-decoration: none
     padding: 8px 11px
     transition: 0.2s
+    cursor: pointer
 
-button:hover
-    background-color: #3e7aff
+    &:hover
+        background-color: #3e7aff
 
-button:active
-    transform: scale(0.97)
+    &:active
+        transform: scale(0.97)
 
-button:focus
-    outline: none
+    &:focus
+        outline: none
 
 merged-buttons
     display: flex
 
-    > button
+    #{$button-alike}
         border-right: 0
         border-radius: 0
 
-    > button:first-child
-        border-top-left-radius: $button-corner-radius
-        border-bottom-left-radius: $button-corner-radius
+        &:first-child
+            border:
+                top-left-radius: $button-corner-radius
+                bottom-left-radius: $button-corner-radius
 
-    > button:last-child
-        border-top-right-radius: $button-corner-radius
-        border-bottom-right-radius: $button-corner-radius
+        &:last-child
+            border:
+                top-right-radius: $button-corner-radius
+                bottom-right-radius: $button-corner-radius
