@@ -1,3 +1,5 @@
+@use "invisible-a"
+
 body
     > header
         display: flex
@@ -5,9 +7,13 @@ body
         padding-top: 0.5rem
         margin-bottom: 1rem
 
-        div
+        a, div
             display: flex
             align-items: center
+
+        // Logo
+        a
+            @include invisible-a.invisible-a
 
             img
                 width: 50px

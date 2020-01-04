@@ -1,10 +1,10 @@
 {% load static %}
 
 <header>
-    <div>
+    <a href="{% url "index" %}">
         <img src="{% static "okaymoneyapp/images/icon.png" %}">
         <h1>OkayMoney</h1>
-    </div>
+    </a>
     <div>
         <merged-buttons>
             <a href="{% url "login" %}" class="button">Войти</a>
